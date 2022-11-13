@@ -52,7 +52,14 @@
     <section class="hero">
         <div class="container container-center">
             <h1 class="center">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button class="button" type="button">Замовити послугу</button>
+            <button data-modal-open class="button" type="button">Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <p>
+                    </p>
+                    <button data-modal-close>Закрити</button>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section">
@@ -102,9 +109,24 @@
     <div class="container">
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="title-container">
-            <li class="work-foto"><img class="section-foto" src="./images/IMG/img.jpg" alt="foto text taping" width="370"></li>
-            <li class="work-foto"><img class="section-foto" src="./images/IMG/img1.jpg" alt="foto aplication apoading" width="370"></li>
-            <li class="work-foto"><img class="section-foto" src="./images/IMG/img2.jpg" alt="foto tablet graffics" width="370"></li>
+            <li class="work-foto">
+                <img class="section-foto" src="./images/IMG/img.jpg" alt="foto text taping" width="370">
+                <div class="description">
+                    Десктопні додатки
+                </div>
+            </li>
+            <li class="work-foto">
+                <img class="section-foto" src="./images/IMG/img1.jpg" alt="foto aplication apoading" width="370">
+                <div class="description">
+                    Мобільні додатки
+                </div>
+            </li>
+            <li class="work-foto">
+                <img class="section-foto" src="./images/IMG/img2.jpg" alt="foto tablet graffics" width="370">
+                <div class="description">
+                    Дизайнерські рішення
+                </div>
+            </li>
         </ul>
     </div>
 </section>
@@ -319,7 +341,7 @@
         <address>
         <ul class="contact">
             <li class="contact-footer">
-                <a class="footer-address" href="https://goo.gl/maps/YLcZyGkc4DeghfoG7" target="_blank" rel="noopener noreferrer nofollow">м.Київ, пр-т Лесі Українки, 26</a>
+                <a class="footer-link footer-address" href="https://goo.gl/maps/YLcZyGkc4DeghfoG7" target="_blank" rel="noopener noreferrer nofollow">м.Київ, пр-т Лесі Українки, 26</a>
             </li> 
             <li class="contact-footer">
                 <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -365,5 +387,6 @@
         </address>
     </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
